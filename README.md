@@ -4,13 +4,13 @@ Codificação de Backend programado em Ruby on Rails e Json para gerenciamento d
 foi implementado com os principais verbos para consulta de Endpoints.
 Ele manipula os dados de máquinas virtuais na nuvem, chamado de PlanosController e CloudVpsController. Ele permite que sejam realizadas operações CRUD (criação, leitura, atualização e exclusão) nas máquinas virtuais em um banco de dados.
 
-- Para rodar aplicação instale o Framework Ruby Rails e rode os seguintes comandos para acesso do Endpoint:
+- Para rodar aplicação instale o Framework Ruby on Rails e rode os seguintes comandos para acesso do Endpoint:
 
 rails db:create
 
 - rails db:migrate
 
-- Para subir aplicação localmente rode:
+- Para subir a aplicação localmente rode:
 rails server
 
 - Planos acesse:
@@ -26,32 +26,32 @@ http://127.0.0.1:3000/cloudvps
 * Resposta
 200 OK em caso de sucesso.
 #
-[
-  {
-    "id": 1,
-    "nome": "Plano básico",
-    "espaco_em_disco": "10 GB",
-    "transferencia": "100 GB",
-    "contas_de_email": 5,
-    "preco": 9.99
-  },
-  {
-    "id": 2,
-    "nome": "Plano intermediário",
-    "espaco_em_disco": "50 GB",
-    "transferencia": "500 GB",
-    "contas_de_email": 20,
-    "preco": 29.99
-  },
-  {
-    "id": 3,
-    "nome": "Plano avançado",
-    "espaco_em_disco": "100 GB",
-    "transferencia": "1 TB",
-    "contas_de_email": 50,
-    "preco": 59.99
-  }
-]
+#### [
+#### {
+#### "id": 1,
+#### "nome": "Plano básico",
+#### "espaco_em_disco": "10 GB",
+#### "transferencia": "100 GB",
+#### "contas_de_email": 5,
+#### "preco": 9.99
+#### },
+#### {
+#### "id": 2,
+#### "nome": "Plano intermediário",
+#### "espaco_em_disco": "50 GB",
+#### "transferencia": "500 GB",
+#### "contas_de_email": 20,
+#### "preco": 29.99
+#### },
+#### {
+#### "id": 3,
+#### "nome": "Plano avançado",
+#### "espaco_em_disco": "100 GB",
+#### "transferencia": "1 TB",
+#### "contas_de_email": 50,
+#### "preco": 59.99
+#### }
+#### ]
 
 * GET /planos/:id
 * Retorna um plano de hospedagem específico.
@@ -61,14 +61,14 @@ http://127.0.0.1:3000/cloudvps
 Resposta
 200 OK em caso de sucesso.
 #
-{
-  "id": 1,
-  "nome": "Plano básico",
-  "espaco_em_disco": "10 GB",
-  "transferencia": "100 GB",
-  "contas_de_email": 5,
-  "preco": 9.99
-}
+#### {
+#### "id": 1,
+#### "nome": "Plano básico",
+#### "espaco_em_disco": "10 GB",
+#### "transferencia": "100 GB",
+#### "contas_de_email": 5,
+#### "preco": 9.99
+#### }
 
 
 
@@ -84,14 +84,14 @@ Resposta
 Resposta
 201 Created em caso de sucesso.
 #
-{
-  "id": 4,
-  "nome": "Plano empresarial",
-  "espaco_em_disco": "250 GB",
-  "transferencia": "5 TB",
-  "contas_de_email": 100,
-  "preco": 99.99
-}
+#### {
+#### "id": 4,
+ #### "nome": "Plano empresarial",
+#### "espaco_em_disco": "250 GB",
+#### "transferencia": "5 TB",
+#### "contas_de_email": 100,
+#### "preco": 99.99
+#### }
 
 
 * PUT /planos/:id
@@ -107,13 +107,13 @@ Resposta
 Resposta
 200 OK em caso de sucesso.
 #
-{
-  "id": 3,
-  "nome": "Plano avançado",
-  "espaco_em_disco": "200 GB",
-  "transferencia": "2 TB",
-  "contas_de_email": 100,"
-  }
+#### {
+#### "id": 3,
+#### "nome": "Plano avançado",
+#### "espaco_em_disco": "200 GB",
+#### "transferencia": "2 TB",
+#### "contas_de_email": 100,"
+#### }
 
 ### Consulta de Endpoints para CloudVps
 * GET /cloudvps
@@ -127,24 +127,22 @@ Código de status: 200 OK
 Corpo da resposta (exemplo):
 
 # 
-[
-  {
-    "id": 1,
-    "plan_id": 1,
-    "hostname": "cloudvps-01",
-    "password": "s3cr3t",
-    "email": "user@exemplo.com",
-    "phone": "+55 11 1234-5678"
-  },
-  {
-    "id": 2,
-    "plan_id": 2,
-    "hostname": "cloudvps-02",
-    "password": "p@ssw0rd",
-    "email": "user2@exemplo.com",
-    "phone": "+55 11 8765-4321"
-  }
-]
+#### {
+#### "id": 1,
+#### "plan_id": 1,
+#### "hostname": "cloudvps-01",
+#### "password": "s3cr3t",
+#### "email": "user@exemplo.com",
+####  "phone": "+55 11 1234-5678"
+#### },
+#### {
+#### "id": 2,
+#### "plan_id": 2,
+#### "hostname": "cloudvps-02",
+#### "password": "p@ssw0rd",
+#### "email": "user2@exemplo.com",
+#### "phone": "+55 11 8765-4321"
+#### }
 
 
 
@@ -158,14 +156,14 @@ Código de status: 200 OK
 
 Corpo da resposta (exemplo):
 #
-{
-  "id": 1,
-  "plan_id": 1,
-  "hostname": "cloudvps-01",
-  "password": "s3cr3t",
-  "email": "user@example.com",
-  "phone": "+55 11 1234-5678"
-}
+#### {
+####  "id": 1,
+####  "plan_id": 1,
+####  "hostname": "cloudvps-01",
+####  "password": "s3cr3t",
+####  "email": "user@example.com",
+####  "phone": "+55 11 1234-5678"
+#### }
 
 
 * POST /cloudvps
