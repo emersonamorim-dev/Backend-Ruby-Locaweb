@@ -161,7 +161,7 @@ Corpo da resposta (exemplo):
 ####  "plan_id": 1,
 ####  "hostname": "cloudvps-01",
 ####  "password": "s3cr3t",
-####  "email": "user@example.com",
+####  "email": "user@exemplo.com",
 ####  "phone": "+55 11 1234-5678"
 #### }
 
@@ -187,6 +187,6 @@ Corpo da resposta (exemplo):
 ####  "plan_id": 2,
 ####  "hostname": "cloudvps-03",
 ####  "password": "p@ssw0rd",
-####  "email": "user3@example.com",
+####  "email": "user3@exemplo.com",
 ####  "phone": "+55 11 1111-2222"
 }
