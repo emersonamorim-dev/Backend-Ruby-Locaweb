@@ -184,13 +184,11 @@ Código de status: 201 Created
 
 Corpo da resposta (exemplo):
 #
-{
-  "id": 3,
-  "plan_id": 2,
-  "hostname": "cloudvps-03",
-  "password": "p@ssw0rd",
-  "email": "user3@example.com",
-  "phone": "+55 11 1111-2222"
+# {
+#  "id": 3,
+#  "plan_id": 2,
+#  "hostname": "cloudvps-03",
+#  "password": "p@ssw0rd",
+#  "email": "user3@example.com",
+#  "phone": "+55 11 1111-2222"
 }
-
-* ...
