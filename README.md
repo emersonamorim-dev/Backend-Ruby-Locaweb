@@ -1,8 +1,23 @@
-# Backend-Ruby-Locaweb
+### Backend-Ruby-Locaweb
 
 Codificação de Backend programado em Ruby on Rails e Json para gerenciamento de Planos de hospedagem e Cloud VPS 
 foi implementado com os principais verbos para consulta de Endpoints.
 Ele manipula os dados de máquinas virtuais na nuvem, chamado de PlanosController e CloudVpsController. Ele permite que sejam realizadas operações CRUD (criação, leitura, atualização e exclusão) nas máquinas virtuais em um banco de dados.
+
+- Para rodar aplicação instale o Framework Ruby Rails e rode os seguintes comandos para acesso do Endpoint:
+
+rails db:create
+
+- rails db:migrate
+
+- Para subir aplicação localmente rode:
+rails server
+
+- Planos acesse:
+http://127.0.0.1:3000/planos
+
+- CloudVps acesse
+http://127.0.0.1:3000/cloudvps
 
 * Endpoints
 * GET /planos
@@ -10,7 +25,7 @@ Ele manipula os dados de máquinas virtuais na nuvem, chamado de PlanosControlle
 
 * Resposta
 200 OK em caso de sucesso.
-
+#
 [
   {
     "id": 1,
@@ -45,7 +60,7 @@ Ele manipula os dados de máquinas virtuais na nuvem, chamado de PlanosControlle
 * id - ID do plano de hospedagem a ser retornado.
 Resposta
 200 OK em caso de sucesso.
-
+#
 {
   "id": 1,
   "nome": "Plano básico",
@@ -68,7 +83,7 @@ Resposta
 * preco - Preço mensal (obrigatório).
 Resposta
 201 Created em caso de sucesso.
-
+#
 {
   "id": 4,
   "nome": "Plano empresarial",
@@ -91,7 +106,7 @@ Resposta
 * preco - Preço mensal (opcional).
 Resposta
 200 OK em caso de sucesso.
-
+#
 {
   "id": 3,
   "nome": "Plano avançado",
@@ -100,7 +115,7 @@ Resposta
   "contas_de_email": 100,"
   }
 
-## Consulta de Endpoints para CloudVps
+### Consulta de Endpoints para CloudVps
 * GET /cloudvps
 * Retorna uma lista de todas as máquinas virtuais na nuvem.
 
@@ -111,6 +126,7 @@ Código de status: 200 OK
 
 Corpo da resposta (exemplo):
 
+# 
 [
   {
     "id": 1,
@@ -141,7 +157,7 @@ Resposta
 Código de status: 200 OK
 
 Corpo da resposta (exemplo):
-
+#
 {
   "id": 1,
   "plan_id": 1,
@@ -167,7 +183,7 @@ Resposta
 Código de status: 201 Created
 
 Corpo da resposta (exemplo):
-
+#
 {
   "id": 3,
   "plan_id": 2,
