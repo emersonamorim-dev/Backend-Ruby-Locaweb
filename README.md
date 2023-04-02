@@ -6,7 +6,7 @@ Ele manipula os dados de máquinas virtuais na nuvem, chamado de PlanosControlle
 
 - Para rodar aplicação instale o Framework Ruby on Rails e rode os seguintes comandos para acesso do Endpoint:
 
-rails db:create
+- rails db:create
 
 - rails db:migrate
 
